@@ -1,0 +1,90 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        padding: 60px 77px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 50px;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+
+        li {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: calc(100% + 8px);
+                background-color: #000;
+                top: -8px;
+                left: 7px;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 50px;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 43px;
+            background-color: #000;
+            top: 63px;
+            left: 7px;
+        }
+
+        &-head {
+            position: relative;
+            padding-top: 45px;
+            padding-left: 56px;
+        }
+
+        &-body {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+
+        &-icon {
+            position: absolute;
+            @include before_circle;
+            bottom: 0;
+            left: 0;
+            &:before {
+                top: auto;
+                bottom: 3px;
+            }
+            img {
+                display: block;
+                position: absolute;
+                top: -25px;
+                left: 18px; 
+            }
+        }
+
+        &-descr {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

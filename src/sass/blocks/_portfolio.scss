@@ -1,0 +1,67 @@
+.portfolio {
+    padding-top: 126px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+        
+    }
+    &__item {
+        position: relative;
+        display: block;
+        transition: all 0.5s;
+        &:hover {
+            // filter: saturate(30%);
+            // filter: sepia(60%);
+            // filter: opacity(25%);
+            // filter: invert(75%);
+            // filter: hue-rotate(90deg);
+            // filter: grayscale(50%);
+            // filter: drop-shadow(16px 16px 20px blue);
+            // filter: contrast(200%);
+            // filter: brightness(0.4);
+            // filter: blur(5px);
+            transform: scale(1.025);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        &_second {
+            grid-row: 2/3;
+            grid-column: 2/4;
+        }
+        &_first {
+            grid-row: 1/3;
+            grid-column: 4/5;
+        }
+        &_third {
+            grid-row: 3/5;
+            grid-column: 1/2;
+        }
+    }
+    &__descr {
+        position: absolute;
+        color: $main-color;
+        font-weight: 700;
+        font-size: 36px;
+        opacity: 0;
+        transition: all 0.5s;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        &:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.socials {
+    display: flex;
+    &__link {
+        font-size: 23px;
+        line-height: 20px;
+        color: #000;
+        margin-right: 15px;
+        text-align: center;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_small {
+            font-size: 21px;
+        }
+        span {
+            transition: all 0.5s;
+        }
+        &:hover {
+            text-decoration: none;
+            .icon-github {
+                color: #6e7177;
+            }
+            .icon-instagram {
+                color: #ff0059;
+            }
+            .icon-square-facebook {
+                color: #3b5998 ;
+            }
+            .icon-telegram {
+                color: #25a4e2;
+            }
+            .icon-linkedin {
+                color: #0a66c2;
+            }
+        }
+    }
+    &_column {
+        .socials__link {
+            transform: rotate(90deg);
+            color: #fff;
+        }
+    }
+    &_menu {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &_contacts {
+        margin-top: 20px;
+    }
+}
