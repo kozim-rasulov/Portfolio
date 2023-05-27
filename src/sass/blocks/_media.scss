@@ -143,10 +143,6 @@
 
         &__photo {
             grid-row: unset;
-
-            img {
-                // object-position: bottom;
-            }
         }
 
         &__skills {
@@ -225,7 +221,7 @@
     }
 
     .promo {
-        background: url('../img/main_bg_reserv.png') no-repeat 66%/cover;
+        // background: url('../img/main_bg_reserv.png') no-repeat 66%/cover;
 
         &__btns {
             margin-top: 30px;
