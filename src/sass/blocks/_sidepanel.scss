@@ -1,5 +1,5 @@
 .sidepanel {
-    position: absolute;
+    position: fixed;
     top: 230px;
     left: -100px;
     display: flex;
@@ -12,13 +12,13 @@
     &__divider {
         width: 70px;
         height: 2px;
-        background-color: #fff;
+        background-color: #000;
         margin: 0 15px;
     }
 
     &__text {
         font-size: 16px;
-        color: #FFFFFF;
+        color: #000;
         font-weight: 700;
     }
 }
