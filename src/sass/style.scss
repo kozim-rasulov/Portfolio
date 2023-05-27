@@ -39,6 +39,14 @@ ul {
     margin: 25px auto 0;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 5px;
+}
+
 
 
 @import "./blocks/menu";
