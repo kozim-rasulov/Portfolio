@@ -138,14 +138,14 @@
         padding-top: 40px;
 
         &__wrapper {
-            grid-template: 400px auto auto / 1fr;
+            grid-template: 550px auto auto / 1fr;
         }
 
         &__photo {
             grid-row: unset;
 
             img {
-                object-position: bottom;
+                // object-position: bottom;
             }
         }
 
@@ -234,7 +234,7 @@
 
     .about {
         &__wrapper {
-            grid-template: 340px auto auto / 1fr;
+            grid-template: 370px auto auto / 1fr;
         }
 
         &__skills {
