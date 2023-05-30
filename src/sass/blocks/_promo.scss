@@ -1,7 +1,6 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
     // background: url("../img/main_bg_reserv.png") no-repeat 50%/cover;
     
 
@@ -21,9 +20,6 @@
         justify-content: center;
         background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
         height: 100vh;
-        // padding-top: 205px;
-        // padding-top: 43px;
-        // padding-bottom: 80px;
     }
 
     &__subtitle {
