@@ -67,7 +67,7 @@
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
                     <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
                     <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <!-- <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li> -->
                     <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
@@ -90,7 +90,7 @@
     </div>
 
 
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="hamburger">
             <span></span>
             <span class="hamburger__long"></span>
@@ -106,6 +106,7 @@
                 </h1>
                 <div class="promo__btns">
                     <a href="#portfolio" class="promo__link button">Портфолио</a>
+                    <a href="https://kozim-rasulov.github.io/My-work/" target="_blank" class="promo__link promo__link_color button"><span>my work</span> <span class="promo__icon icon-link"></span></a>
                     <a href="#about" class="promo__link">Про меня</a>
                 </div>
             </div>
@@ -192,7 +193,7 @@
                                         <img src="icons/experience/university.svg" alt="university">
                                     </div>
                                     <h4 class="title title_fz14">ТГЭУ</h4>
-                                    <p class="resume__item-descr">Диплом бакалавра | Ташкент (2016-2020)</p>
+                                    <p class="resume__item-descr">Бакалавр | Ташкент (2016-2020)</p>
                                 </div>
                                 <p class="resume__item-body">
                                     Выпускник бакалавра Ташкентского Государственного Экономического Университета по
@@ -211,7 +212,7 @@
                                 </div>
                                 <p class="resume__item-body">
                                     В 2021 году начал изучать Web-программирование в PROWEB. Изучал HTML, CSS, Git,
-                                    Gulp, Jquery, JavaScript, PHP, WordPress. Имею Сертификат.
+                                    Gulp, Jquery, JavaScript, PHP, WordPress. Имею <a href="./img/Certificate/PROWEB-Certificate.jpg" target="_blank" class="resume__item-link">Сертификат <span class="resume__item-cert icon-file-certificate"></span></a>
                                 </p>
                             </div>
                         </li>
@@ -225,8 +226,8 @@
                                     <p class="resume__item-descr">Курсы по Web-разработке </p>
                                 </div>
                                 <p class="resume__item-body">
-                                    Параллельно с PROWEB изучал онлайн программирование в UDEMY. Изучал HTML, CSS, Git,
-                                    Gulp, Jquery. Имею Сертификат.
+                                    Параллельно с PROWEB изучал онлайн программирование в UDEMY. Изучал HTML, CSS,
+                                    Gulp, Jquery. Имею <a href="https://www.udemy.com/certificate/UC-2470a13e-426e-4543-8263-91e8a7a3022d/" target="_blank" class="resume__item-link">Сертификат <span class="resume__item-cert icon-file-certificate"></span></a>
                                 </p>
                             </div>
                         </li>
@@ -440,7 +441,7 @@
                         не будем, но навык работы с ней присутствует
                     </p>
                 </div>
-                <div class="skills__block">
+                <!-- <div class="skills__block">
                     <div class="skills__icon">
                         <img src="icons/skills/node.js.svg" alt="node.js">
                     </div>
@@ -449,7 +450,7 @@
                         Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять
                         действия, которые пользователь не видит
                     </p>
-                </div>
+                </div> -->
                 <div class="skills__block">
                     <div class="skills__icon">
                         <img src="icons/skills/php.png" alt="php">
@@ -531,66 +532,231 @@
             <div class="portfolio__wrapper">
                 <a href="https://kozim-rasulov.github.io/Uber/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/Uber/screen.png" alt="uber">
-                    <p class="portfolio__descr">UBER</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">Uber</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-bootstrap" title="Bootstrap"></span>
+                            <span class="portfolio__icon icon-gulp" title="GULP"></span>
+                            <span class="portfolio__icon icon-sass" title="SASS"></span>
+                            <span class="portfolio__icon icon-square-js" title="Java Script"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
+
                 </a>
                 <a href="https://kozim-rasulov.github.io/Boulevard/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/Boulevard/screen.png" alt="Boulevard">
-                    <p class="portfolio__descr">boulevard</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">Boulevard</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/TNW/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/TNW/screen.png" alt="TNW">
-                    <p class="portfolio__descr">tnw</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">tnw</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Street-88/dist/" target="_blank"
                     class="portfolio__item portfolio__item_first">
                     <img src="https://kozim-rasulov.github.io/Street-88/dist/img/screen.png" alt="street-88">
-                    <p class="portfolio__descr">street-88</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">street-88</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-gulp" title="GULP"></span>
+                            <span class="portfolio__icon icon-sass" title="SASS"></span>
+                            <span class="portfolio__icon icon-square-js" title="Java Script"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Pulse/dist/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/Pulse/dist/screen.png" alt="pulse">
-                    <p class="portfolio__descr">PULSE</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">pulse</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-bootstrap" title="Bootstrap"></span>
+                            <span class="portfolio__icon icon-gulp" title="GULP"></span>
+                            <span class="portfolio__icon icon-sass" title="SASS"></span>
+                            <span class="portfolio__icon icon-square-js" title="Java Script"></span>
+                            <span class="portfolio__icon icon-php" title="PHP"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Vue-cinemas/" target="_blank"
                     class="portfolio__item portfolio__item_second">
                     <img src="https://kozim-rasulov.github.io/Vue-cinemas/screen-1x2.png" alt="Vue-Cinemas">
-                    <p class="portfolio__descr">vue-cinemas</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">vue-cinemas</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Porten/app/build/" target="_blank"
                     class="portfolio__item portfolio__item_third">
                     <img src="https://kozim-rasulov.github.io/Porten/app/build/img/screen.png" alt="Porten">
-                    <p class="portfolio__descr">porten</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">porten</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Marketing/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/Marketing/screen.png" alt="Marketing">
-                    <p class="portfolio__descr">Marketing</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">marketing</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/Nike/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/Nike/screen.png" alt="Nike">
-                    <p class="portfolio__descr">Nike</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">nike</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/IndeVets/dist" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/IndeVets/dist/img/screen.png" alt="Indevets">
-                    <p class="portfolio__descr">IndeVets</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">indevets</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-gulp" title="GULP"></span>
+                            <span class="portfolio__icon icon-sass" title="SASS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/WordPress/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/WordPress/screen.png" alt="WordPress">
-                    <p class="portfolio__descr">WordPress</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">wordpress</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/burgers/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/burgers/screen.png" alt="Burgers">
-                    <p class="portfolio__descr">Burgers</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">burgers</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-square-js" title="Java Script"></span>
+                            <span class="portfolio__icon icon-typescript" title="Type Script"></span>
+                            <span class="portfolio__icon icon-angular" title="Angular"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/OpenShop/dist" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/OpenShop/dist/img/screen.png" alt="OpenShop">
-                    <p class="portfolio__descr">Open Shop</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">open-shop</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-bootstrap" title="Bootstrap"></span>
+                            <span class="portfolio__icon icon-gulp" title="Gulp"></span>
+                            <span class="portfolio__icon icon-sass" title="SASS"></span>
+                            <span class="portfolio__icon icon-square-js" title="Java Script"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-watch-smart" title="Тема - светлая и тёмная"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="https://kozim-rasulov.github.io/My-work/" target="_blank" class="portfolio__item">
                     <img src="https://kozim-rasulov.github.io/My-work/img/screen.png" alt="My-work">
-                    <p class="portfolio__descr">My-Work</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">my-work</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-html5" title="HTML"></span>
+                            <span class="portfolio__icon icon-css3-alt" title="CSS"></span>
+                            <span class="portfolio__icon icon-bootstrap" title="Bootstrap"></span>
+                            <span class="portfolio__icon icon-git-alt" title="Git"></span>
+                            <span class="portfolio__icon icon-figma" title="Figma"></span>
+                            <span class="portfolio__icon icon-font-awesome" title="Font Awesome"></span>
+                            <span class="portfolio__icon icon-watch-smart" title="Тема - светлая и тёмная"></span>
+                            <span class="portfolio__icon icon-laptop-mobile" title="Адаптивен"></span>
+                        </div>
+                    </div>
                 </a>
                 <a href="./img/soon.png" target="_blank" class="portfolio__item">
                     <img src="./img/soon.jpg" alt="soon">
-                    <p class="portfolio__descr">скоро</p>
+                    <div class="portfolio__descr">
+                        <p class="portfolio__name">скоро</p>
+                        <div class="portfolio__tools">
+                            <span class="portfolio__icon icon-laptop-code" title="soon"></span>
+                            <span class="portfolio__icon icon-gear-complex-code" title="soon"></span>
+                        </div>
+                    </div>
                 </a>
 
             </div>
@@ -598,7 +764,7 @@
         </div>
     </section>
 
-    <section class="price" id="price">
+    <!-- <section class="price" id="price">
         <div class="container">
             <h2 class="title title_fz16 title_section">Прайс-лист</h2>
             <div class="divider"></div>
@@ -612,7 +778,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="contacts" id="contacts">
         <div class="container">
@@ -669,6 +835,9 @@
         </div>
     </section>
 
+    <a href="#promo" class="pageNav icon-circle-chevron-up"></a>
+
+    <script src="js/ajax_libs_jquery_3.3.1_jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

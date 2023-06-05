@@ -129,7 +129,6 @@
 
     .promo {
         &__title {
-            width: 300px;
             line-height: 39px;
         }
     }
@@ -225,9 +224,20 @@
 
         &__btns {
             margin-top: 30px;
+            max-width: 540px;
+            span:first-child{
+                display: none;
+            }
+            span:nth-of-type(2) {
+                position: static;
+            }       
+        }
+        &__link {
+            &:nth-of-type(2) {
+                padding: 12px;
+            }
         }
     }
-
     .about {
         &__wrapper {
             grid-template: 370px auto auto / 1fr;

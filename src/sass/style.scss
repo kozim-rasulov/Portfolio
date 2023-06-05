@@ -23,6 +23,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 ul {
     list-style-type: none;
 }
@@ -43,10 +44,12 @@ ul {
 ::-webkit-scrollbar {
     width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
     background: $main-color;
     border-radius: 5px;
 }
+
 
 
 
@@ -63,3 +66,41 @@ ul {
 @import "./blocks/contacts";
 @import "./blocks/media";
 @import "./blocks/policy";
+
+.pageNav {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    font-size: 30px;
+    color: $main-color;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(0.90);
+        text-decoration: none;
+        color: $main-color;
+    }
+    // scroll-behavior: smooth;
+}
+
+// .pageNav {
+//     z-index: 998;
+//     // position: relative;
+//     display: none;
+//     position: fixed;
+//     bottom: 126px;
+//     right: 40px;
+//     width: 40px;
+//     height: 40px;
+//     border: 1px solid #fff;
+//     background: var(--navColor);
+//     border-radius: 50%;
+//     &__icon {
+//         position: absolute;
+//         left: 49%;
+//         top: 47%;
+//         transform: translate(-50%,-52%);
+//         font-size: 28px;
+//         color: #fff;
+//     }
+// }

@@ -17,36 +17,36 @@ counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
-// собираем все якоря; устанавливаем время анимации и количество кадров
-const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-      animationTime = 500,
-      framesCount = 70;
 
-anchors.forEach(function(item) {
-  // каждому якорю присваиваем обработчик события
-  item.addEventListener('click', function(e) {
-    // убираем стандартное поведение
-    e.preventDefault();
-    
-    // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-    
-    // запускаем интервал, в котором
-    let scroller = setInterval(function() {
-      // считаем на сколько скроллить за 1 такт
-      let scrollBy = coordY / framesCount;
-      
-      // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-      // и дно страницы не достигнуто
-      if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        // то скроллим на к-во пикселей, которое соответствует одному такту
-        window.scrollBy(0, scrollBy);
-      } else {
-        // иначе добираемся до элемента и выходим из интервала
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
-      }
-    // время интервала равняется частному от времени анимации и к-ва кадров
-    }, animationTime / framesCount);
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() > 1200) {
+//       $('.pageNav').fadeIn(easing);
+//   } else {
+//       $('.pageNav').fadeOut();
+//   }
+// });
+
+$(document).ready(function(){
+  // Добавить плавную прокрутку до всех ссылок
+  $("a").on('click', function(event) {
+
+    // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+    if (this.hash !== "") {
+      // Запретить поведение щелчка якоря по умолчанию
+      event.preventDefault();
+
+      // Хранить хэш
+      const hash = this.hash;
+
+      // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+      // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+        window.location.hash = hash;
+      });
+    } // Конец, если
   });
 });

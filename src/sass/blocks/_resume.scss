@@ -86,5 +86,14 @@
             font-size: 12px;
             line-height: 18px;
         }
+        &-link {
+            font-weight: 700;
+            color: $main-color;
+            transition: 0.3s;
+        }
+        &-cert {
+            font-weight: 700;
+            font-size: 12px;
+        }
     }
 }
